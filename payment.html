@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="bgcolor1.css">
+		<title>Payment Page</title>
+		<script type="text/javascript" src="payment.js"></script>
+		<style>
+			legend{
+				font-family: "Calibri";
+				font-style: italic;
+				font-size: 30px;
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<form name="payment"  onsubmit="return validate();" action = "http://localhost:8080/apps/Payment">
+			<fieldset align=center>
+			<legend align=center><u>User Details</u></legend>
+				<br><label for="name">Name : </label>
+				<input type="text" id="name" name="name"required><br>
+				<br><label for="from">from : <label>
+				<input type="text" id="from" name="from"required><br>
+				<br><label>to : </label>
+				<input type="text" name="to"required><br>
+				<br><label>seats_no : </label>
+				<input type="text" name="seats" min=1 step=1required><br>
+				<br><label>phone_no : </label>
+				<input type="text" name="phone_no"required><br>
+			</fieldset><br>
+			<fieldset align=center>
+				<legend align=center><u>Payment Processing</u></legend>
+				<br><label for="cardno">Card Number : </label>
+				<input type="number" id="cardno" name="cardno" 
+									placeholder="xxxx-xxxx-xxxx-xxxx"><br>
+				<br><label for="cardholder">Card Holder : <label>
+				<input type="text" id="cardholder" name="cardholder" 
+				placeholder="Name On Card"><br>
+				<br><label>Expiry : </label>
+				<input type="number" name="month" min=1 max=12 step=1
+											placeholder ="mm">
+				<input type="number" name="year" min=2020 step=1 
+											placeholder="yyyy"><br>
+				<br><label for="cvv">CVV : </label>
+				<input type="password" id="cvv" name="cvv" placeholder=xxx><br>
+				<br><button type="submit">Proceed</button>
+				<button type="reset">Cancel</button>
+				<h6><u>Note</u> : Do Not Refresh This Page....</h6>
+			</fieldset>
+		</form>
+	</body>
+</html>
