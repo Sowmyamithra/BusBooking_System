@@ -2,7 +2,11 @@
 a model of online bus booing system 
 
 #### Languages And Tools used - 
-##### HTML , CSS , JavaScript  - frontend
-##### Java Servlets , SQL      - backend
-##### PostgreSQL               - database
-##### VisualStudio             - code editor
+* frontend -
+  HTML , CSS , JavaScript
+* backend -
+  Java Servlets , SQL
+* database -
+  PostgreSQL
+* code editor -
+  VisualStudio
